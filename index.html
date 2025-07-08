@@ -10,15 +10,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PMMXYWTTFW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PMMXYWTTFW');
-</script>
   </head>
   <body>
     <header>
@@ -386,7 +377,7 @@
 
     <footer>
       <p>
-        &copy; 2025 ACPIC Lar São José Colorado/Pr. Todos os direitos
+        &copy; <span id"currentYear"></span> ACPIC Lar São José Colorado/Pr. Todos os direitos
         reservados.
       </p>
       <p>
@@ -398,5 +389,20 @@
         <strong>Uningá, Maringá PR.</strong>
       </p>
     </footer>
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PMMXYWTTFW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PMMXYWTTFW');
+
+  const currentYearspan = document.getElementById("currentYear");
+
+      currentYearspan.textContent = new Date().getFullYear();
+  
+</script>
   </body>
 </html>
