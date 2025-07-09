@@ -142,6 +142,6 @@ footer {
 
 @media (max-width: 500px) {
   .gallery-banner img {
-    max-width: 100%;
+    max-width: 70%;
   }
 }
