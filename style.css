@@ -123,6 +123,25 @@ footer {
 
 .endereco {
   display: flex;
+
+  .gallery-banner {
+    text-align: center;
+  }
+
+  .gallery-banner img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 500px) {
+    .gallery-banner img {
+      max-width: 100%;
+    }
+  }
   flex-direction: column;
   align-items: center;
 }
